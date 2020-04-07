@@ -1,3 +1,16 @@
-*{
-    box-sizing: border-box;
-}
+//setka
+@import 'grid';
+
+//blocks
+@import 'bloks/navbar';
+
+//fonts
+@import 'fonts';
+
+//collors
+@import 'colors';
+//interface
+@import 'interface';
+
+//second section -- hero
+@import 'hero';
