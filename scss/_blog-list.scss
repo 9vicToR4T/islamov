@@ -1,0 +1,41 @@
+.blog{
+    color: black;
+    &__heading{
+        display: flex;
+        align-items: center;
+        padding: 20px 40px;
+        margin-bottom: 70px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__title{
+        color: #85144b;
+        font-size: 24px;
+    }
+    &__link-more{
+        color: #F012BE;
+        font-size: 16px;
+    }
+
+    &-list{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        &__card{
+    margin-bottom: 20px;
+        }
+        &__image img{
+            width: 260px;
+            box-shadow: 10px 10px 28px 10px rgba(0,0,0,0.75);
+            
+        }
+        &__tex{
+            min-height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
