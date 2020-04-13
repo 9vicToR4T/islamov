@@ -2,3 +2,63 @@ body {
     @include bold;
     color: #fff;
 }
+
+.bg-secondary {
+    background-color: $bg_secondary;
+}
+
+
+
+.input {
+    height: 80px;
+    padding: 20px;
+    border: 1px solid #dddddd;
+}
+
+.button {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgb(73, 70, 248);
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 20px 30px;
+}
+
+.checkbox {
+    &-label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin-right: 30px;
+
+        &:before {
+            content: "";
+            width: 30px;
+            height: 30px;
+            border: 1px solid #dddddd;
+            margin-right: 20px;
+        }
+    }
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox:checked+label:before {
+    background-color: rgb(15, 15, 15);
+}
+
+
+.fa {
+    font-family: 'FontAwesome' !important;
+}
+
+.section-title {
+    color: #222;
+    text-align: center;
+    font-size: 30px;
+    margin: 50px auto;
+    text-transform: uppercase;
+}
