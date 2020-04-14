@@ -1,0 +1,44 @@
+.contacts {
+    height: 300px;
+}
+
+.contacts-block {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+
+    &__item {}
+}
+
+.contacts {
+
+    &__image {
+        color: #FF4136;
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        color: #222222;
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: 430px) {
+    .contacts {
+        height: 550px;
+        &__image {
+            margin-bottom: 5px;
+        }
+    }
+
+    .contacts-block {
+        justify-content: center;
+
+        &__item {
+            width: 80%;
+            margin-bottom: 50px;
+        }
+    }
+}

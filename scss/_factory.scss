@@ -24,6 +24,9 @@
 }
 
 @media (max-width: 768px) {
+  .factory{
+    height: 550px;
+  }
   .factory-block {
     text-align: center;
     &__image{
@@ -38,6 +41,9 @@
   }
 }
 @media (max-width: 430px) {
+  .factory{
+    height: 600px;
+  }
   .factory-block {
     &__image{
       width: 80%;
