@@ -1,0 +1,50 @@
+.factory{
+  height: 400px;
+}
+
+.factory-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 320px;
+
+  &__text {
+    color: #252424;
+    //margin-left: 50px;
+    width: 60%;
+  }
+  &__image{
+    width: 35%;
+    margin-left: 40px;
+    padding: 15px;
+    img{
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .factory-block {
+    text-align: center;
+    &__image{
+      width: 60%;
+      margin-left: 0;
+      padding: 0;
+    }
+    &__text {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+}
+@media (max-width: 430px) {
+  .factory-block {
+    &__image{
+      width: 80%;
+     
+    }
+    &__text {
+      width: 100%;
+    }
+  }
+}
