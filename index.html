@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Islamov Word</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -559,7 +561,7 @@
                     <div class="contacts-block__item">
                         <div class="contacts__image"><i class="fa fa-skype"></i></div>
                         <!-- /.contacts__image -->
-                        <div class="contacts__text"> 
+                        <div class="contacts__text">
                             <a href=""> Boss.is.here</a>
                         </div>
                         <!-- /.contacts__text -->
@@ -571,13 +573,26 @@
             <!-- /.container -->
         </section>
         <!-- /.section contacts -->
+        <div class="my-map">
+            <h2 class="section-title section__title">Find Us</h2>
+        <div class="container">
+            <div class="map" id="map">
+
+            </div>   
+        </div>
+            
+        </div>
+        
+        
+        <!-- /#map.map -->
 
 
     </main>
 
 
-
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
     <!-- <script type="text/javascript" src="https://spikmi.com/Widget?Id=3134"></script> -->
+    <script src="js/map.js"></script>
     <script src="js/nav.js"></script>
 </body>
 
