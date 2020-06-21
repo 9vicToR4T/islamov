@@ -2,6 +2,7 @@
     background-color: #f5f6f8;
     padding-top: 40px;
     padding-bottom: 40px;
+
     &__link {
         text-align: center;
         margin-bottom: 50px;
@@ -29,6 +30,8 @@
         height: 200px;
         position: relative;
         margin-bottom: 50px;
+        overflow-y: hidden;
+
         box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
 
         &-tag {
@@ -53,6 +56,10 @@
 
         &__buttons {
             position: absolute;
+            transition: 0.3s;
+            transform: translateY(100%);
+
+            opacity: 0;
             display: flex;
             bottom: 0;
             right: 0;
@@ -103,6 +110,11 @@ img.like-img {
         border-left: 3px solid #f30f0f;
         border-right: 3px solid #f30f0f;
     }
+}
+
+div.catalog-card__buttons.btn_apear {
+    opacity: 1;
+    transform: translateY(0%);
 }
 
 

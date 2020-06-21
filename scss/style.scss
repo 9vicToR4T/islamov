@@ -4,6 +4,9 @@
 //blocks
 @import 'bloks/navbar';
 
+//footer
+@import 'bloks/footer';
+
 //fonts
 @import 'fonts';
 
@@ -36,6 +39,12 @@
 // section step 7
 @import 'step';
 
+// section slider twenty
+@import 'before';
+
+// section slider slick
+@import 'slick';
+
 // section step 9
 @import 'reviews';
 
@@ -47,3 +56,7 @@
 
 // section map 12
 @import 'map';
+
+// section questions 13
+@import 'questions';
+

@@ -1,9 +1,11 @@
 @import 'fonts';
-header{
+
+header {
     height: 690px;
 }
+
 .header {
-    background-image: linear-gradient(0deg, #50372a, #ec1a55);
+    background-image: linear-gradient(0deg, #001f3f, #39CCCC);
     width: 100%;
     height: 90px;
     left: 0;
@@ -18,11 +20,14 @@ header{
     position: absolute;
     z-index: 99;
     top: 90px;
-    background-image: linear-gradient(0deg, #ec6e1a, #c5ab16);
+background-color: #001f3f;
     transition: 0.3s;
     opacity: 0;
+    transform: translateY(-200);
 
     &_active {
+        //opacity: 1;
+        transform: translateY(0);
         opacity: 1;
 
     }
@@ -80,9 +85,18 @@ header{
 .menu {
     width: 90px;
     height: 90px;
-    background-color: rgb(240, 224, 9);
+    background-color: #191970;
+
     border-radius: 50%;
     position: relative;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:focus {
+        outline: none;
+    }
 
     &__myspan,
     &__myspan::after,
@@ -153,7 +167,8 @@ header{
     }
 
     &__icon {
-        color: rgb(204, 201, 6);
+        color: #191970;
+        //color: rgb(204, 201, 6);
         font-size: 25px;
     }
 }
@@ -164,12 +179,13 @@ header{
     flex-direction: column;
 
     &__icon {
-        color: rgb(204, 201, 6);
+        color: #191970;
         font-size: 30px;
         display: block;
     }
 
     &__name {
+        
         color: #fff;
         text-decoration: none;
 
@@ -183,7 +199,8 @@ header{
     flex-direction: column;
 
     &__icon {
-        color: rgb(204, 201, 6);
+        color: #191970;
+        //color: rgb(204, 201, 6);
         font-size: 30px;
         display: block;
     }
